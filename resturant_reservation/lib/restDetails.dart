@@ -13,8 +13,9 @@ class _RestDetailsState extends State<RestDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(249, 238, 226, 1),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromRGBO(249, 238, 226, 1),
         centerTitle: true,
         title: Text(
           "Out2Night",
@@ -39,6 +40,7 @@ class _RestDetailsState extends State<RestDetails> {
               widget.name.name,
               style: TextStyle(
                 fontSize: 40,
+                fontFamily: "sofiapro",
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -49,6 +51,7 @@ class _RestDetailsState extends State<RestDetails> {
               widget.name.city,
               style: TextStyle(
                 fontSize: 30,
+                fontFamily: "sofiapro",
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -59,6 +62,7 @@ class _RestDetailsState extends State<RestDetails> {
               "Address: " + widget.name.address,
               style: TextStyle(
                 fontSize: 20,
+                fontFamily: "sofiapro",
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -69,6 +73,7 @@ class _RestDetailsState extends State<RestDetails> {
               "Contact:" + widget.name.phone,
               style: TextStyle(
                 fontSize: 20,
+                fontFamily: "sofiapro",
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -81,6 +86,7 @@ class _RestDetailsState extends State<RestDetails> {
                   "Ratings:  " + widget.name.price.toString(),
                   style: TextStyle(
                     fontSize: 22,
+                    fontFamily: "sofiapro",
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -94,8 +100,8 @@ class _RestDetailsState extends State<RestDetails> {
               child: RaisedButton(
                 color: Colors.white,
                 textColor: Colors.black,
-                highlightColor: Colors.greenAccent,
-                splashColor: Colors.cyanAccent,
+                highlightColor: Color.fromRGBO(190, 188, 203, 1),
+                splashColor: Color.fromRGBO(87, 89, 101, 1),
                 padding: EdgeInsets.symmetric(vertical: 30, horizontal: 80),
                 elevation: 10,
                 highlightElevation: 30,
@@ -112,6 +118,7 @@ class _RestDetailsState extends State<RestDetails> {
                 child: Text(
                   "Book Online",
                   style: TextStyle(
+                    fontFamily: "sofiapro",
                     fontSize: 20,
                   ),
                 ),

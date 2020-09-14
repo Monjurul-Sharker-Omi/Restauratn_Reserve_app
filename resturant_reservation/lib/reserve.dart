@@ -10,8 +10,6 @@ class Reserveweb extends StatefulWidget {
 }
 
 class _ReservewebState extends State<Reserveweb> {
-  //Reserveweb mobileReserveUrl;
-  //_ReservewebState(this.mobileReserveUrl);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
