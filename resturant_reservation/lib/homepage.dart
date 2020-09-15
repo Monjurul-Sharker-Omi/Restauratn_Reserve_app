@@ -81,7 +81,7 @@ class _homepageState extends State<homepage> {
                       } else if (snapshot.connectionState ==
                           ConnectionState.done) {
                         return Container(
-                          height: MediaQuery.of(context).size.height - 100,
+                          //height: screenHeight,
                           child: ListView.builder(
                             itemCount: data.length,
                             itemBuilder: (BuildContext context, int index) {
@@ -161,11 +161,11 @@ class _homepageState extends State<homepage> {
               ),
               Positioned(
                 left: 110,
-                top: 10,
+                top: 20,
                 child: Text(
                   rest.name,
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 14.5,
                     fontFamily: "sofiapro",
                     color: Colors.white70,
                     fontWeight: FontWeight.bold,
@@ -175,7 +175,7 @@ class _homepageState extends State<homepage> {
               ),
               Positioned(
                 left: 110,
-                top: 40,
+                top: 45,
                 child: Text(
                   rest.address,
                   style: TextStyle(
@@ -218,7 +218,6 @@ class CategoriesScroller extends StatelessWidget {
     final double categoryHeight =
         MediaQuery.of(context).size.height * 0.30 - 50;
     return SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -230,7 +229,7 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 150,
                 margin: EdgeInsets.only(right: 20),
-                height: categoryHeight * 0.60,
+                height: categoryHeight * 0.70,
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(255, 240, 230, .96),
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
@@ -263,7 +262,7 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 150,
                 margin: EdgeInsets.only(right: 20),
-                height: categoryHeight * 0.6,
+                height: categoryHeight * .70,
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(255, 240, 230, .96),
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
@@ -298,7 +297,7 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 150,
                 margin: EdgeInsets.only(right: 20),
-                height: categoryHeight * 0.6,
+                height: categoryHeight * .70,
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(255, 240, 230, .96),
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
@@ -331,7 +330,7 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 150,
                 margin: EdgeInsets.only(right: 20),
-                height: categoryHeight * 0.6,
+                height: categoryHeight * .70,
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(255, 240, 230, .9695),
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
